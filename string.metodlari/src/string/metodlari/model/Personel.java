@@ -1,8 +1,8 @@
 package string.metodlari.model;
-
+import java.lang.*;
 import java.time.LocalDate;
 
-public class Personel {
+public class Personel extends Object{
 
 	private long tcKimlikNo;
 	private String ad ;
@@ -14,15 +14,16 @@ public class Personel {
 
 	// Eğer default ctor dan başka bir parametreli ctor yazılırsa def. ctor compiler tarafından yazılmaz
 	// gerekli görüyorsak biz yazabiliriz.
-	public Personel() {
-		// TODO Auto-generated constructor stub
-	}
+//	public Personel() {
+//		// TODO Auto-generated constructor stub
+//	}
 	
 	@Override
 	public String toString() {
 		return "Personel [tcKimlikNo=" + tcKimlikNo + ", ad=" + ad + ", soyad=" + soyad + ", dogumTarihi=" + dogumTarihi
 				+ ", maas=" + maas + ", dogumYeri=" + dogumYeri + "]";
 	}
+	
 
 	public Personel(long tcKimlikNo, String ad, String soyad, LocalDate dogumTarihi, double maas, String dogumYeri) {
 		this.tcKimlikNo = tcKimlikNo;

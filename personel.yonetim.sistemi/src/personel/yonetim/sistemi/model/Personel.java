@@ -9,6 +9,12 @@ public final class Personel /*extends Object*/{
 		return "Personel [tcKimlikNo=" + tcKimlikNo + ", ad=" + ad + ", soyad=" + soyad + ", dogumTarihi=" + dogumTarihi
 				+ ", maas=" + maas + "]";
 	}
+	
+	public String toCSVString() {
+		return tcKimlikNo + ";" + ad + ";"+ soyad + ";" + dogumTarihi.getDayOfMonth() + "." + 
+				dogumTarihi.getMonthValue() + "." + dogumTarihi.getYear()+ ";" + maas;
+	}
+
 	// field
 	private final long tcKimlikNo;
 	private final String ad;

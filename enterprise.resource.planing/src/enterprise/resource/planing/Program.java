@@ -19,7 +19,7 @@ public class Program {
 //		personel.ad = "Seyfi";
 //		personel.soyad = "Veli";
 //		personel.dogumTarihi = LocalDate.of(2001, 8, 7);
-		//personel.cocukSayisi = -1;
+//		personel.cocukSayisi = -1;
 		personel.setTcKimlikNo(123456789029L);
 		personel.setCocukSayi((byte)5);
 		
